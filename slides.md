@@ -105,3 +105,5 @@ Each of the next sections can be worked with individually, so no particular orde
 # License
 
 Code in this repository is property of [Starwit Technologies GmbH](https://starwit-technologies.de/) and is published under AGPL. So if you want to adapt it, any change needs to be published under AGPL as well. Please let us know, which changes you made. Same goes for errors and bugs.
+
+License text can be cound [here](License)
