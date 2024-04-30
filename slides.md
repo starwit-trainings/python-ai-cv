@@ -64,22 +64,24 @@ a:hover {
   color: #1E708B; 
   text-decoration: underline; 
 }
+ul {
+  text-align: left
+}
 
 </style>
 
 <!-- _class: lead -->
-# Data Analysis and AI with Python - Overview
-
-This repository is part of a lecture, that shall teach students to use the Python programming language and modern software development tools like Git to do write software for data analysis and some selected AI algorithms. This is however not a course in AI and thus no algorithmic/mathematical foundations are explained here. 
-
-Feel free to use this material for your teaching classes. However, please not [license note](#license).
+# Analytics with Python
 
 ---
 ## Tools & Preparations
 
-Here is an overview of tools and requirements you should install on your computer.  So take your time preparing your work environment.
+Here is an overview of tools and requirements you should install on your computer. So take your time preparing your work environment.
 
-* 
+* Windows / Ubuntu installation
+* Conda vs Pip
+* Git
+* Editor: Visual Studio Code
 
 ---
 # Chapters
@@ -88,19 +90,72 @@ Each of the next sections can be worked with individually, so no particular orde
 
 ---
 ## 01 - Development Environment & Language Introduction 
-
+* Git Flow Example
+* Python language overview
+  * basic syntax
+  * Hello World
+  * functions, modules, packages
+  * Lambda functions
+  * Context manager as concept
+  * Runtime / Binary bindings (CPython, PyPi, Jython)
+* Pip / Virtual environments
+* Poetry
+* Basic Language Concepts
+  * convert/parse JSON
+  * read/write files
+  * network IO
+* Docker
+  * Installation & Usage
+  * Compose
 ---
-## 02 - Introduction to the Python programming language
+## 02 - Important libraries & tools for Python
+* Jupyter
+  * how to run
+  * how to version
+  * how to use
+* numpy/pandas
+* https://www.sympy.org/en/index.html
+* various math examples
+  * compute standard distribution & values
+  * matrix operations / slicing
 
 ---
 ## 03 - Eating & Analyzing Data
+* work with CSV/JSON fiels
+* visualize Plotly/Matplotlib/Seaborn
+* openCV
+  * Introduction
+  * sample API functions
+  * sample Images 
+* Example: Trajectories Carmel
 
 ---
 ## 04 - AI tool chain: training & running models 
-
+* CV example 
+  * Yolov8 detection, segmentation, poses
+  * train/execute custom model
+* PyTorch
+  * Introduction
+  * NIST OCR example
+  * build custom net
+* Netron to visualize networks
+* Model file architectures (ONNX, PyTorch)
+* Introduction SAE
+  * run on every computer
+  * video source
+* Examples 
+  * Video sample from Carmel
+  * Live footage Aalen?
 ---
-## 05 - A complex AI example to play with 
-
+## 05 - Running a computer vision pipeline 
+* SAE architecture
+  * ProtoBuf
+  * Detection
+  * Tracking
+  * Mapping
+* Custom modules
+* Advanced Topics
+  * concurrency or the lack thereof
 ---
 # License
 
