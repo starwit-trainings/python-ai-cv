@@ -123,6 +123,7 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
   git push -u origin yourname # just the first time, for a new branch
 ```
 * Why git flow matters
+* On .gitignore
 ---
 # Introduction to the Python Programming Language
 * Invented in the 1990ies
@@ -134,4 +135,28 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 * We use [CPython](https://en.wikipedia.org/wiki/CPython#:~:text=CPython%20is%20the%20reference%20implementation,CPython)
 ---
 ## Basic Features
+* [Language overview](https://en.wikipedia.org/wiki/Python_(programming_language))
+* dynamically typed
+* multiple paradigms
+* procedural, object oriented, functional
+* Shell vs running programs
+* Large function library included
+* Vast eco-systems of third party libs -> pip
 ---
+## Hello World
+```bash
+  python3 hello-world.py 
+```
+---
+## Install Libraries & virtual environments
+* pip can be used to install libraries, however no more than one version per lib
+* Solution: Virtual Environments
+```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+```
+![](../imgs/venv.jpg)
+```bash
+  pip install numpy
+```
+![](../imgs/pip01.jpg)

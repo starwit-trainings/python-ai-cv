@@ -72,41 +72,20 @@ ul {
 
 <!-- _class: lead -->
 # Analytics with Python
-
----
-## Tools & Preparations
-
-Here is an overview of tools and requirements you should install on your computer. So take your time preparing your work environment.
-
-* Windows / Ubuntu installation
-* Conda vs Pip
-* Git
-* Editor: Visual Studio Code
-
 ---
 # Chapters
 
-Each of the next sections can be worked with individually, so no particular order is required. You will, however, notice that certain topics, like modeling classes and map them to SQL structure, are recurring aspects.
+Each of the next sections can be worked with individually, so no particular order is required. However it is recommandable to follow the intended order.
 
 ---
 ## 01 - Development Environment & Language Introduction 
-* Git Flow Example
-* Python language overview
-  * basic syntax
-  * Hello World
-  * functions, modules, packages
-  * Lambda functions
-  * Context manager as concept
-  * Runtime / Binary bindings (CPython, PyPi, Jython)
-* Pip / Virtual environments
-* Poetry
-* Basic Language Concepts
-  * convert/parse JSON
-  * read/write files
-  * network IO
-* Docker
-  * Installation & Usage
-  * Compose
+* Setting up your development environment
+  * Access Github/SSH
+  * Checkout code
+  * Install Python
+* Write first program in Python
+* Quick review of Python's most important features
+[Jump to first chapter](01-Python+Devtools-Introduction/01-intro.md)
 ---
 ## 02 - Important libraries & tools for Python
 * Jupyter
