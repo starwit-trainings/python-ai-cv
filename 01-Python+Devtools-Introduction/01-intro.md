@@ -80,6 +80,8 @@ ul {
   * Install Python
 * Write first program in Python
 * Quick review of Python's most important features
+* Resources:
+  * https://www.w3schools.com/python/default.asp
 
 ---
 ## Setup your dev environment
@@ -134,9 +136,10 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 * On Multithreading
 * We use [CPython](https://en.wikipedia.org/wiki/CPython#:~:text=CPython%20is%20the%20reference%20implementation,CPython)
 ---
-## Basic Features
+## Language Features
 * [Language overview](https://en.wikipedia.org/wiki/Python_(programming_language))
 * dynamically typed
+* Garbage collected - sort of
 * multiple paradigms
 * procedural, object oriented, functional
 * Shell vs running programs
@@ -145,8 +148,15 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 ---
 ## Hello World
 ```bash
-  python3 hello-world.py 
+  python3 01-hello-world.py 
 ```
+---
+## Language Introduction
+* Conditionals & Loops
+* Imports & Libraries
+* Lists, Dictionaries, JSON
+* Functions
+* Objects & Classes
 ---
 ## Install Libraries & virtual environments
 * pip can be used to install libraries, however no more than one version per lib
