@@ -1,0 +1,756 @@
+{
+	"RESPONSE": {
+		"RESULT": [
+			{
+				"WeatherObservation": [
+					{
+						"Sample": "2024-04-29T11:28:38.387+02:00",
+						"Wind": [
+							{
+								"Height": 6
+							}
+						],
+						"Id": "220735110",
+						"Measurepoint": {
+							"Id": 327,
+							"Name": "Björklinge",
+							"Geometry": {
+								"SWEREF99TM": "POINT (646031.715 6659820.374)",
+								"WGS84": "POINT (17.62248 60.0495)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:36.800Z",
+						"Deleted": false
+					},
+					{
+						"Sample": "2024-04-29T11:28:38.387+02:00",
+						"Wind": [
+							{
+								"Height": 6
+							}
+						],
+						"Id": "220735111",
+						"Measurepoint": {
+							"Id": 426,
+							"Name": "Oxelösund",
+							"Geometry": {
+								"SWEREF99TM": "POINT (618750.279 6507378.47)",
+								"WGS84": "POINT (17.04877 58.69027)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:36.854Z",
+						"Deleted": false
+					},
+					{
+						"Sample": "2024-04-29T11:30:01.000+02:00",
+						"Surface": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "PT100",
+								"Value": 11.8
+							}
+						},
+						"Air": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 14.3
+							},
+							"Dewpoint": {
+								"Origin": "calculated",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 9.9
+							},
+							"RelativeHumidity": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 71.6
+							}
+						},
+						"Wind": [
+							{
+								"Height": 6
+							}
+						],
+						"Id": "220735112",
+						"Measurepoint": {
+							"Id": 202,
+							"Name": "Mölnbo",
+							"Geometry": {
+								"SWEREF99TM": "POINT (640353.821 6548534.797)",
+								"WGS84": "POINT (17.44708 59.05309)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:42.938Z",
+						"Deleted": false
+					},
+					{
+						"Sample": "2024-04-29T11:30:01.000+02:00",
+						"Surface": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "PT100",
+								"Value": 17.2
+							}
+						},
+						"Air": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 14.7
+							},
+							"Dewpoint": {
+								"Origin": "calculated",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 8.8
+							},
+							"RelativeHumidity": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 64.2
+							}
+						},
+						"Wind": [
+							{
+								"Height": 6,
+								"Speed": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 2.1
+								},
+								"Direction": {
+									"Origin": "measured",
+									"SensorNames": "WAC15",
+									"Value": 45
+								}
+							}
+						],
+						"Aggregated10minutes": {
+							"Wind": {
+								"SpeedAverage": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 2.1
+								}
+							}
+						},
+						"Aggregated30minutes": {
+							"Wind": {
+								"SpeedMax": {
+									"Value": 5.1
+								},
+								"SpeedAverage": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 2.1
+								}
+							}
+						},
+						"Id": "220735113",
+						"Measurepoint": {
+							"Id": 203,
+							"Name": "Södertälje",
+							"Geometry": {
+								"SWEREF99TM": "POINT (650983.378 6563586.427)",
+								"WGS84": "POINT (17.64257 59.18449)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:42.985Z",
+						"Deleted": false
+					},
+					{
+						"Sample": "2024-04-29T11:30:00.000+02:00",
+						"Surface": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "PT100",
+								"Value": 17.8
+							}
+						},
+						"Air": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 14.3
+							},
+							"Dewpoint": {
+								"Origin": "calculated",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 8.7
+							},
+							"RelativeHumidity": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 65.6
+							}
+						},
+						"Wind": [
+							{
+								"Height": 6,
+								"Speed": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 1.8
+								},
+								"Direction": {
+									"Origin": "measured",
+									"SensorNames": "WAC15",
+									"Value": 225
+								}
+							}
+						],
+						"Aggregated10minutes": {
+							"Wind": {
+								"SpeedAverage": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 1.8
+								}
+							},
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Aggregated30minutes": {
+							"Wind": {
+								"SpeedMax": {
+									"Value": 3.4
+								},
+								"SpeedAverage": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 1.7
+								}
+							},
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Id": "220735114",
+						"Measurepoint": {
+							"Id": 206,
+							"Name": "Moraberg",
+							"Geometry": {
+								"SWEREF99TM": "POINT (652097.103 6565263.834)",
+								"WGS84": "POINT (17.66321 59.19914)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:43.016Z",
+						"Deleted": false
+					},
+					{
+						"Sample": "2024-04-29T11:30:01.000+02:00",
+						"Surface": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "PT100",
+								"Value": 16.7
+							}
+						},
+						"Air": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 15.9
+							},
+							"Dewpoint": {
+								"Origin": "calculated",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 9.9
+							},
+							"RelativeHumidity": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 63.5
+							}
+						},
+						"Wind": [
+							{
+								"Height": 6
+							}
+						],
+						"Aggregated10minutes": {
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Aggregated30minutes": {
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Id": "220735115",
+						"Measurepoint": {
+							"Id": 208,
+							"Name": "Tumba",
+							"Geometry": {
+								"SWEREF99TM": "POINT (660407.141 6563116.539)",
+								"WGS84": "POINT (17.80694 59.17682)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:43.063Z",
+						"Deleted": false
+					},
+					{
+						"Sample": "2024-04-29T11:30:00.000+02:00",
+						"Surface": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "PT100",
+								"Value": 22
+							}
+						},
+						"Air": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 17.1
+							},
+							"Dewpoint": {
+								"Origin": "calculated",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 10.2
+							},
+							"RelativeHumidity": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 59.9
+							}
+						},
+						"Wind": [
+							{
+								"Height": 6
+							}
+						],
+						"Aggregated10minutes": {
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Aggregated30minutes": {
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Id": "220735116",
+						"Measurepoint": {
+							"Id": 209,
+							"Name": "Tullinge",
+							"Geometry": {
+								"SWEREF99TM": "POINT (666585.594 6567029.926)",
+								"WGS84": "POINT (17.91789 59.20954)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:43.110Z",
+						"Deleted": false
+					},
+					{
+						"Sample": "2024-04-29T11:30:02.000+02:00",
+						"Surface": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "PT100",
+								"Value": 16.8
+							}
+						},
+						"Air": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 14.1
+							},
+							"Dewpoint": {
+								"Origin": "calculated",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 8.6
+							},
+							"RelativeHumidity": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 66.1
+							}
+						},
+						"Wind": [
+							{
+								"Height": 6,
+								"Speed": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 2.3
+								},
+								"Direction": {
+									"Origin": "measured",
+									"SensorNames": "WAC15",
+									"Value": 270
+								}
+							}
+						],
+						"Aggregated10minutes": {
+							"Wind": {
+								"SpeedAverage": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 2.3
+								}
+							},
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Aggregated30minutes": {
+							"Wind": {
+								"SpeedMax": {
+									"Value": 5.5
+								},
+								"SpeedAverage": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 2
+								}
+							},
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Id": "220735117",
+						"Measurepoint": {
+							"Id": 210,
+							"Name": "Grödinge",
+							"Geometry": {
+								"SWEREF99TM": "POINT (660012.51 6554066.251)",
+								"WGS84": "POINT (17.79342 59.09579)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:43.142Z",
+						"Deleted": false
+					},
+					{
+						"Sample": "2024-04-29T11:30:00.000+02:00",
+						"Surface": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "PT100",
+								"Value": 20.5
+							}
+						},
+						"Air": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 16.3
+							},
+							"Dewpoint": {
+								"Origin": "calculated",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 9.3
+							},
+							"RelativeHumidity": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 59.2
+							}
+						},
+						"Wind": [
+							{
+								"Height": 6
+							}
+						],
+						"Aggregated10minutes": {
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Aggregated30minutes": {
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Id": "220735118",
+						"Measurepoint": {
+							"Id": 215,
+							"Name": "Farsta",
+							"Geometry": {
+								"SWEREF99TM": "POINT (678000.928 6570915.938)",
+								"WGS84": "POINT (18.12069 59.23975)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:43.173Z",
+						"Deleted": false
+					},
+					{
+						"Sample": "2024-04-29T11:30:02.000+02:00",
+						"Surface": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "PT100",
+								"Value": 17.8
+							}
+						},
+						"Air": {
+							"Temperature": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 10.5
+							},
+							"Dewpoint": {
+								"Origin": "calculated",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 6.7
+							},
+							"RelativeHumidity": {
+								"Origin": "measured",
+								"SensorNames": "LAMBRECHT_1",
+								"Value": 74.5
+							}
+						},
+						"Wind": [
+							{
+								"Height": 6,
+								"Speed": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 2.1
+								},
+								"Direction": {
+									"Origin": "measured",
+									"SensorNames": "WAC15",
+									"Value": 180
+								}
+							}
+						],
+						"Aggregated10minutes": {
+							"Wind": {
+								"SpeedAverage": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 2.1
+								}
+							},
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Aggregated30minutes": {
+							"Wind": {
+								"SpeedMax": {
+									"Value": 4.3
+								},
+								"SpeedAverage": {
+									"Origin": "measured",
+									"SensorNames": "WAA15",
+									"Value": 2.5
+								}
+							},
+							"Precipitation": {
+								"Rain": false,
+								"Snow": false,
+								"RainSum": {
+									"Origin": "calculated",
+									"SensorNames": "OPTICEYE",
+									"Value": 0
+								},
+								"SnowSum": {
+									"Solid": {
+										"Origin": "calculated",
+										"SensorNames": "OPTICEYE",
+										"Value": 0
+									}
+								},
+								"TotalWaterEquivalent": {
+									"Value": 0
+								}
+							}
+						},
+						"Id": "220735119",
+						"Measurepoint": {
+							"Id": 218,
+							"Name": "Gustavsberg",
+							"Geometry": {
+								"SWEREF99TM": "POINT (688545.742 6581393.112)",
+								"WGS84": "POINT (18.31434 59.32912)"
+							}
+						},
+						"ModifiedTime": "2024-04-29T09:31:43.283Z",
+						"Deleted": false
+					}
+				]
+			}
+		]
+	}
+}

@@ -145,17 +145,19 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 * Shell vs running programs
 * Large function library included
 * Vast eco-systems of third party libs -> pip
+* Indentations...
 ---
 ## Hello World
 ```bash
-  python3 01-hello-world.py 
+  python3 scripts/01-hello-world.py 
 ```
 ---
 ## Language Introduction
 * Conditionals & Loops
-* Imports & Libraries
+* Exceptions
 * Lists, Dictionaries, JSON
-* Functions
+* Imports & Libraries
+* Functions & Parameters
 * Objects & Classes
 ---
 ## Install Libraries & virtual environments
