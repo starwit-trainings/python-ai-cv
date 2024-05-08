@@ -84,5 +84,8 @@ ul {
 * various math examples
   * compute standard distribution & values
   * matrix operations / slicing
+---
 
+## Numpy
+* https://numpy.org/doc/1.26/user/absolute_beginners.html
 ---

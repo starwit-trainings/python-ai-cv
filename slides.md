@@ -85,6 +85,8 @@ Each of the next sections can be worked with individually, so no particular orde
   * Install Python
 * Write first program in Python
 * Quick review of Python's most important features
+* Virtual environments and dependency management
+* Advanced features
 [Jump to first chapter](01-Python+Devtools-Introduction/01-intro.md)
 ---
 ## 02 - Important libraries & tools for Python

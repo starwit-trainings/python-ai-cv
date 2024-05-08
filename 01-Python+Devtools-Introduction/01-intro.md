@@ -1,6 +1,6 @@
 ---
 marp: true
-paginate: hide
+paginate: true
 theme: default 
 header: ![h:35](../imgs/starwit.png)
 footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
@@ -80,6 +80,8 @@ ul {
   * Install Python
 * Write first program in Python
 * Quick review of Python's most important features
+* Virtual environments and dependency management
+* Advanced features
 * Resources:
   * https://www.w3schools.com/python/default.asp
 
@@ -153,12 +155,13 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 ```
 ---
 ## Language Introduction
-* Conditionals & Loops
-* Exceptions
-* Lists, Dictionaries, JSON
-* Imports & Libraries
-* Functions & Parameters
-* Objects & Classes
+* [Conditionals](scripts/02-control-flow.py) & [Loops](scripts/04-loops.py)
+* [Exceptions](scripts/03-exceptions.py)
+* [Lists, Dictionaries](scripts/05-lists-dictionaries.py), [JSON](scripts/07-using-JSON.py)
+* And Arrays?
+* [Imports & Libraries](scripts/06-importing-from-libs.py)
+* [Functions & Parameters](scripts/08-functions.py)
+* [Objects & Classes](scripts/09-oop.py) - very brief (abstract classes, interfaces, (multi)inheritance)
 ---
 ## Install Libraries & virtual environments
 * pip can be used to install libraries, however no more than one version per lib
@@ -172,3 +175,17 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
   pip install numpy
 ```
 ![](../imgs/pip01.jpg)
+
+---
+### Virtual envs in detail
+* venv folder should considered as temporary - nothing peristent belongs there!
+* it mostly mirrors central folder structures
+![](../imgs/venv02.jpg)
+![](../imgs/venv03.jpg)
+---
+
+## Advanced Features
+* [Working with files](advanced-features/01-working-with-files.py)
+* [HTTP requests](advanced-features/02-http-requests.py)
+* [Simple GUI](advanced-features/03-simple-gui.py)
+* Poetry https://python-poetry.org/
