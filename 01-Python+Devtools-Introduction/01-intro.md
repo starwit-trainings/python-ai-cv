@@ -84,6 +84,7 @@ ul {
 * Advanced features
 * Resources:
   * https://www.w3schools.com/python/default.asp
+* Docker
 
 ---
 ## Setup your dev environment
@@ -187,5 +188,14 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 ## Advanced Features
 * [Working with files](advanced-features/01-working-with-files.py)
 * [HTTP requests](advanced-features/02-http-requests.py)
+  * pip install requests
 * [Simple GUI](advanced-features/03-simple-gui.py)
-* Poetry https://python-poetry.org/
+* [On main and parameters](advanced-features/04-on-main.py)
+
+---
+# Introduction to Docker
+* How does it work and what is good for?
+* Installation Linux/Windows
+* Run container
+* Build your own images
+* Docker Compose
