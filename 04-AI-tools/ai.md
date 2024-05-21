@@ -74,6 +74,7 @@ ul {
 # Chapter 4 - AI tool chain: training & running models
 ---
 # Overview
+This section provides fundamentals on how to label training data, how to run trainings and how to apply trained models. 
 * CV example 
   * Yolov8 detection, segmentation, poses
   * train/execute custom model
@@ -89,4 +90,53 @@ ul {
 * Examples 
   * Video sample from Carmel
   * Live footage Aalen?
+
 ---
+## Introduction openCV
+* extensive library to work images/videos
+* written in C/C++
+* bindings in many other languages
+* easy to use with Python
+* features
+  * read image/video formats
+  * transform images, filtering
+  * image stitching
+  * various AI functions: face recognition, object detection, ...
+* good hardware support - accelerated functions
+* if it is image/video processing _always_ look here first: https://docs.opencv.org/4.9.0/
+---
+## Introduction Yolo
+* You look only once
+* Fast, precise & well supported
+* General idea
+  * Divide image in NxN cells
+  * Classify for each cell and class, if object probability is >0
+  * Intersection Over Unions with probability per cell -> bounding boxes
+  * Non-Max Suppression to reduce bounding boxes
+* Plenty of docs available [example](https://www.datacamp.com/blog/yolo-object-detection-explained)
+* remember this is not an AI lecture :)
+* Various implementations - we will use Yolov8 by [Ultralytics](https://docs.ultralytics.com/)
+* Please note license agreement - AGPL!
+---
+## An application example Yolo & openCV
+* [OpenCV](01-introduction-example/01-opencv.py)
+* [Yolo](01-introduction-example/01-yolo-example.py)
+---
+## Introduction PyTorch
+* Framework written in C++/Python
+* Governed by Linux Foundation
+* Tensor operations / Deep neural networks
+* Tensors here are multi-dimensional arrays
+* can push computation to GPUs (CUDA -> Nvidia, ROCm -> AMD)
+* basis for many frameworks and algorithm implementations
+---
+### PyTorch examples & tasks
+
+---
+## Introduction Label Studio
+* Instance for this course: https://label.aitools.starwit-infra.de/ 
+* If you want to install your own instance: https://labelstud.io/
+* You get an invite link, to create a login
+* We will lable videos
+---
+### Labeling Objectives

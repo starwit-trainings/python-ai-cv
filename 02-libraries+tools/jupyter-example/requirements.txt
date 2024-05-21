@@ -1,0 +1,4 @@
+notebook
+ipykernel
+matplotlib
+numpy

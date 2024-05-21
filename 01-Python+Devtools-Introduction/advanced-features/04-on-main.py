@@ -6,7 +6,6 @@
 # parse parameters
 
 import argparse
-import pprint as pp
 
 if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser()

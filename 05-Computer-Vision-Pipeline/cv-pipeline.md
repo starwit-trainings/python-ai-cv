@@ -74,6 +74,8 @@ ul {
 # Chapter 5 - Computer Vision Pipeline
 ---
 # Overview
+* RTSP/openCV revisited
+* Brief overview Kubernetes
 * SAE architecture
   * ProtoBuf
   * Detection
@@ -81,5 +83,5 @@ ul {
   * Mapping
 * Custom modules
 * Advanced Topics
-  * concurrency or the lack thereof
+  * Compile for Nvidia hardware
 ---
