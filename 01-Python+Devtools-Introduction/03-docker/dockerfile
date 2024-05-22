@@ -1,0 +1,7 @@
+FROM python:3-alpine
+
+COPY ./hello-world.py /code/
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+CMD ["python3", "/code/hello-world.py"]

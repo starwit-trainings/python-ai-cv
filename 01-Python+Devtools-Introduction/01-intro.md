@@ -195,7 +195,9 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 ---
 # Introduction to Docker
 * How does it work and what is good for?
-* Installation Linux/Windows
-* Run container
-* Build your own images
+* Tasks
+  * Installation Linux/Windows
+  * Run container
+  * Build your own images
+* About Credentials
 * Docker Compose
