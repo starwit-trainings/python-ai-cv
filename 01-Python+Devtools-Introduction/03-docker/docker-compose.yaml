@@ -1,0 +1,22 @@
+services:
+  sampleapp:
+    image: sampleapp:latest
+
+  db:
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - ./volumes:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=megasecretpassword
+      - POSTGRES_USER=sampleuser
+      - POSTGRES_DB=supersecretpassword
+
+  grafana:
+    image: grafana/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=password
+      - GF_SECURITY_ADMIN_USER=admin
+    ports:
+      - 3000:3000

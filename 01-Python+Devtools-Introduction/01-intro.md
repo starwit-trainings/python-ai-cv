@@ -200,4 +200,5 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
   * Run container
   * Build your own images
 * About Credentials
+* Inspecting Images: [dive](https://github.com/wagoodman/dive)
 * Docker Compose
