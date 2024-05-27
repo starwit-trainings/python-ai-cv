@@ -131,7 +131,8 @@ This section provides fundamentals on how to label training data, how to run tra
 * basis for many frameworks and algorithm implementations
 ---
 ### PyTorch examples & tasks
-
+* NIST
+* ...
 ---
 ## Introduction Label Studio
 * Instance for this course: https://label.aitools.starwit-infra.de/ 
