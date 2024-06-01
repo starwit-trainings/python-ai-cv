@@ -2,8 +2,30 @@
 marp: true
 paginate: hide
 theme: default 
-header: ![h:35](imgs/starwit.png)
+header: ![h:35](../imgs/starwit.png)
 footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
+---
+
+
+<!-- _class: lead -->
+# Chapter 5 - Computer Vision Pipeline
+---
+# Overview
+* Brief overview Kubernetes
+* Introduction SAE
+  * run on every computer
+  * video source
+* Examples 
+  * Video sample from Carmel
+  * Live footage Aalen?
+* SAE architecture
+  * ProtoBuf
+  * Detection
+  * Tracking
+  * Mapping
+* Custom modules
+* Advanced Topics
+  * Compile for Nvidia hardware
 ---
 
 <style>
@@ -69,19 +91,3 @@ ul {
 }
 
 </style>
-
-<!-- _class: lead -->
-# Chapter 5 - Computer Vision Pipeline
----
-# Overview
-* RTSP/openCV revisited
-* Brief overview Kubernetes
-* SAE architecture
-  * ProtoBuf
-  * Detection
-  * Tracking
-  * Mapping
-* Custom modules
-* Advanced Topics
-  * Compile for Nvidia hardware
----
