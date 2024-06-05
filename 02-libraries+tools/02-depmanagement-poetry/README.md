@@ -1,5 +1,5 @@
 # Dependency Management with Poetry
-## How-to run
+## How-to run tests
 - (Make sure that you have poetry installed, i.e. `poetry --version` works)
 - Run `poetry install`
 - Run `poetry run pytest`
