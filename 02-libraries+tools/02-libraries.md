@@ -79,12 +79,12 @@ __Make sure you understand this idea - we will use from now on!__
 * If you don't like command line operations use [pgAdmin](https://www.pgadmin.org/download/)
 * [Example](04-timeseries/01-connect-timescaledb.py) how to connect from Python
 * Task
-  * measure response time of web address and write to CSV file [Task](04-timeseries/02-measure-response-time.py)
+  * measure response time of web address and write to CSV file [Task](03-timeseries/02-measure-response-time.py)
   * Write same data into a time series data base
 ---
 ## Timescale Tips
 * Timescale supports large time series tables (hypertables)
-* see example to create a table
+### Create Table & HyperTable
 ```SQL
   CREATE TABLE public.responsetimes
   (
@@ -94,6 +94,11 @@ __Make sure you understand this idea - we will use from now on!__
   );
 
   SELECT create_hypertable('responsetimes', 'measuretime');
+```  
+### Sample Input
+```SQL
+  INSERT INTO public.responsetimes ("url", "measuretime", "responsetime")
+  VALUES ('http://worldtimeapi.org/api/timezone/Europe/Berlin', '2024-06-06 12:34:56+00', 54782);
 ```
 ---
 ## Jupyter
