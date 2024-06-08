@@ -98,6 +98,34 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 * [Functions & Parameters](scripts/08-functions.py)
 * [Objects & Classes](scripts/09-oop.py) - very brief (abstract classes, interfaces, (multi)inheritance)
 ---
+### Introduction - Tasks 
+* Task 01
+  * Write a script that asks for your age, height and weight
+  * Make sure, that data is input correctly by checking types
+  * Compute [body mass index](https://en.wikipedia.org/wiki/Body_mass_index) and ouput result
+  * program shall comment (politely) on results
+* Task 02
+  * Write a script, that finds all files ending with *.py in a folder (as parameter)
+  * Content of all files shall be concatenated into one output file 
+  * Content of each found file shall be separated by a newline in output file
+  * output file shall be located in [temporary folder](https://python.readthedocs.io/en/latest/library/tempfile.html) of your operating system
+* Task 03
+  * Take data structure from script [07](01-python-introduction/07-using-JSON.py)
+  * Goal is a flat list stored to a file
+  * Collect all (!) temperatures, WGS coordinates, Timestamp 
+  * Timestamp shall be output in a human readable form
+  * Output into a CSV file
+---
+### Introduction - Tasks   
+* Task 04
+  * Build Docker image from [example](03-docker/dockerfile)
+  * Run image
+  * Stop image - why is it taking so long?
+* Task 05 - Bonus Challenge
+  * Get an API token from [Trafikverket](https://data.trafikverket.se/oauth2/Account/register)
+  * Get live weather data from [API](https://data.trafikverket.se/documentation/datacache/testbench)
+  * Extract data with above solution and write data into file
+---
 ## Install Libraries & virtual environments
 * pip can be used to install libraries, however no more than one version per lib
 * Solution: Virtual Environments

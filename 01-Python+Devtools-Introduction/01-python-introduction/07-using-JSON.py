@@ -38,7 +38,7 @@ weatherParsed = json.loads(weatherSample)
 print(weatherParsed['RESPONSE']['RESULT'])
 
 # reading from a file - Note: exception handling
-with open("scripts/07-sample-data.json") as f:
+with open("07-sample-data.json") as f:
     weatherParsed = json.load(f) # Note the subtle difference
 print(len(weatherParsed['RESPONSE']['RESULT'][0]['WeatherObservation']))
 

@@ -80,7 +80,7 @@ __Make sure you understand this idea - we will use from now on!__
 * [Example](04-timeseries/01-connect-timescaledb.py) how to connect from Python
 * Task
   * measure response time of web address and write to CSV file [Task](03-timeseries/02-measure-response-time.py)
-  * Write same data into a time series data base
+  * Write same data into a time series data base [hint](https://docs.timescale.com/quick-start/latest/python/)
 ---
 ## Timescale Tips
 * Timescale supports large time series tables (hypertables)
@@ -92,7 +92,6 @@ __Make sure you understand this idea - we will use from now on!__
     "measuretime" timestamp with time zone NOT NULL,
     "responsetime" BIGINT NOT NULL
   );
-
   SELECT create_hypertable('responsetimes', 'measuretime');
 ```  
 ### Sample Input
