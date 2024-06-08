@@ -77,14 +77,12 @@ __Make sure you understand this idea - we will use from now on!__
 * [TimescaleDB](https://www.timescale.com/) extension of PostgreSQL database for time series data
 * Nice set of [functions](https://docs.timescale.com/api/latest/)
 * If you don't like command line operations use [pgAdmin](https://www.pgadmin.org/download/)
-* [Example](04-timeseries/01-connect-timescaledb.py) how to connect from Python
-* Task
-  * measure response time of web address and write to CSV file [Task](03-timeseries/02-measure-response-time.py)
-  * Write same data into a time series data base [hint](https://docs.timescale.com/quick-start/latest/python/)
----
-## Timescale Tips
 * Timescale supports large time series tables (hypertables)
-### Create Table & HyperTable
+* [Example](04-timeseries/01-connect-timescaledb.py) how to connect from Python
+---
+## Timescale Tasks
+### Task 01 - Create structures
+__Create Table & HyperTable__
 ```SQL
   CREATE TABLE public.responsetimes
   (
@@ -94,11 +92,16 @@ __Make sure you understand this idea - we will use from now on!__
   );
   SELECT create_hypertable('responsetimes', 'measuretime');
 ```  
-### Sample Input
+__Sample Input__
 ```SQL
   INSERT INTO public.responsetimes ("url", "measuretime", "responsetime")
   VALUES ('http://worldtimeapi.org/api/timezone/Europe/Berlin', '2024-06-06 12:34:56+00', 54782);
 ```
+---
+### Task 01
+  * measure response time of web address and write to CSV file [Task](03-timeseries/02-measure-response-time.py)
+### Task 02
+  * Write same data into a time series data base [hint](https://docs.timescale.com/quick-start/latest/python/)
 ---
 ## Jupyter
 * Typical data exploration workflow:
@@ -115,13 +118,12 @@ __Make sure you understand this idea - we will use from now on!__
 ### Setting up Jupyter
 Jupyter can be run as a browsable service like so:
 ```bash
-  cd jupyter-example
+  cd 04-jupyter-example
   python3 -m venv .venv
   source .venv/bin/activate
   pip install -r requirements.txt 
   jupyter notebook
 ```
-
 Last command will open a browser tab and you can start working with notebooks.
 
 VSCode can run notebooks and that is the preferred usage for this course. Use the power of an IDE :)
