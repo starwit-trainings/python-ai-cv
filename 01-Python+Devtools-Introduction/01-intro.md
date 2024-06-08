@@ -137,7 +137,6 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 * Inspecting Images: [dive](https://github.com/wagoodman/dive)
 * Docker Compose
 
-
 <style>
 header {
   text-align: right;

@@ -73,7 +73,29 @@ __Make sure you understand this idea - we will use from now on!__
     TODO
   ```
 ---
+# Docker Compose & TimescaleDB
+* [TimescaleDB](https://www.timescale.com/) extension of PostgreSQL database for time series data
+* Nice set of [functions](https://docs.timescale.com/api/latest/)
+* If you don't like command line operations use [pgAdmin](https://www.pgadmin.org/download/)
+* [Example](04-timeseries/01-connect-timescaledb.py) how to connect from Python
+* Task
+  * measure response time of web address and write to CSV file [Task](04-timeseries/02-measure-response-time.py)
+  * Write same data into a time series data base
+---
+## Timescale Tips
+* Timescale supports large time series tables (hypertables)
+* see example to create a table
+```SQL
+  CREATE TABLE public.responsetimes
+  (
+    "url" TEXT NOT NULL,
+    "measuretime" timestamp with time zone NOT NULL,
+    "responsetime" BIGINT NOT NULL
+  );
 
+  SELECT create_hypertable('responsetimes', 'measuretime');
+```
+---
 ## Jupyter
 * Typical data exploration workflow:
   * load data
@@ -126,7 +148,7 @@ The following section introduces selected Python libraries, that are useful for 
 * used by everything
 * https://numpy.org/doc/1.26/user/absolute_beginners.html
 * https://www.w3schools.com/python/numpy/ 
-* [Examples and tasks](04-numpy/)
+* [Examples and tasks](05-numpy/)
 
 ---
 ## Plotting data
@@ -137,7 +159,7 @@ The following section introduces selected Python libraries, that are useful for 
   ```bash
   apt install python3-tk
   ```
-* [Examples and tasks](05-plotting/)
+* [Examples and tasks](06-plotting/)
 
 ---
 ## SciPy
@@ -145,21 +167,21 @@ The following section introduces selected Python libraries, that are useful for 
 * Builds on top of numpy, large set of more mathematical functions
 * https://scipy.org/
 * To a certain degree an alternative to MATLAB
-* [Examples and tasks](06-scipy/)
+* [Examples and tasks](07-scipy/)
 
 ---
 ## statistics module
 * Part of Python standard libs
 * Basic statistical functions
 * If it works - don't use more complicated stuff
-* [Examples and tasks](07-statistics/)
+* [Examples and tasks](08-statistics/)
 
 ---
 ## Pandas
 * library for time series and numerical tables
 * easy import/export to various data sources (CSV,SQL)
 * "Excel for Python"
-* [Examples and tasks](08-pandas/)
+* [Examples and tasks](09-pandas/)
 
 <style>
 header {

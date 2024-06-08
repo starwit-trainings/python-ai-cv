@@ -1,17 +1,16 @@
 services:
   sampleapp:
-    image: sampleapp:latest
+   image: sampleapp:latest
 
   db:
-    image: postgres:14-alpine
+    image: timescale/timescaledb:latest-pg16
     ports:
       - 5432:5432
     volumes:
       - ./volumes:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=megasecretpassword
-      - POSTGRES_USER=sampleuser
-      - POSTGRES_DB=supersecretpassword
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=sample
 
   grafana:
     image: grafana/grafana
