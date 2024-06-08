@@ -77,6 +77,10 @@ __Make sure you understand this idea - we will use from now on!__
 * [TimescaleDB](https://www.timescale.com/) extension of PostgreSQL database for time series data
 * Nice set of [functions](https://docs.timescale.com/api/latest/)
 * If you don't like command line operations use [pgAdmin](https://www.pgadmin.org/download/)
+* For CLI users 
+  ```Bash
+    psql -h localhost -p 5432 -U postgres
+  ```
 * Timescale supports large time series tables (hypertables)
 * [Example](04-timeseries/01-connect-timescaledb.py) how to connect from Python
 ---
@@ -146,6 +150,8 @@ VSCode supports running Jupyter notebooks code in virtual environments:
 
 The following section introduces selected Python libraries, that are useful for data analytics and AI projects. It is by no means complete and will be extended.
 
+You will find for every library example file(s), that will provide a quick intro. However for tasks if not already existing, create a Jupyter notebook.
+
 ---
 ## Numpy
 * NumPy: numeric Python - actually C -> fast
@@ -154,6 +160,7 @@ The following section introduces selected Python libraries, that are useful for 
 * used by everything
 * https://numpy.org/doc/1.26/user/absolute_beginners.html
 * https://www.w3schools.com/python/numpy/ 
+* Test you knowledge: https://www.w3schools.com/python/numpy/exercise.asp
 * [Examples and tasks](05-numpy/)
 
 ---

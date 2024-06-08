@@ -1,4 +1,6 @@
 numpy
+imageio
+notebook
 scipy
 matplotlib
 pandas
