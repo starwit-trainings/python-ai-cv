@@ -3,7 +3,7 @@ marp: true
 paginate: hide
 theme: default 
 header: ![h:35](imgs/starwit.png)
-footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
+footer: 'Starwit Technologies GmbH | Predictive Analytics | Overview'
 ---
 
 <!-- _class: lead -->

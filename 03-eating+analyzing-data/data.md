@@ -3,7 +3,15 @@ marp: true
 paginate: hide
 theme: default 
 header: ![h:35](imgs/starwit.png)
-footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
+footer: 'Starwit Technologies GmbH | Predictive Analytics | Overview'
+
+<!-- _class: lead -->
+# Chapter 3 - Eating & Analyzing Data
+---
+# Overview
+* work with CSV/JSON files
+* visualize Plotly/Matplotlib/Seaborn
+* Example: Trajectories Carmel
 ---
 
 <style>
@@ -69,16 +77,3 @@ ul {
 }
 
 </style>
-
-<!-- _class: lead -->
-# Chapter 3 - Eating & Analyzing Data
----
-# Overview
-* work with CSV/JSON files
-* visualize Plotly/Matplotlib/Seaborn
-* openCV
-  * Introduction
-  * sample API functions
-  * sample Images 
-* Example: Trajectories Carmel
----
