@@ -10,4 +10,5 @@ seaborn
 plotly
 requests
 psycopg2-binary
+sqlalchemy
 ipyleaflet

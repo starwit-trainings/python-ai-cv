@@ -74,7 +74,7 @@ ul {
 # Chapter 3 - Eating & Analyzing Data
 ---
 # Overview
-* work with CSV/JSON fiels
+* work with CSV/JSON files
 * visualize Plotly/Matplotlib/Seaborn
 * openCV
   * Introduction
