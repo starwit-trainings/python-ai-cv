@@ -18,6 +18,7 @@ In this chapter various helpful tools and libraries are introduced, that are ess
 * SciPy
 * statistics module
 * Pandas
+* OpenStreetMap
 ---
 ## What is dependency management
 * Collecting all libraries automatically

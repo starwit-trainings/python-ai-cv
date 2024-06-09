@@ -4,7 +4,10 @@ notebook
 scipy
 matplotlib
 pandas
+openpyxl
+odfpy
 seaborn
 plotly
 requests
 psycopg2-binary
+ipyleaflet
