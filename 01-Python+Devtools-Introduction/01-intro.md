@@ -4,6 +4,7 @@ paginate: true
 theme: default 
 header: ![h:35](../imgs/starwit.png)
 footer: 'Starwit Technologies GmbH | Predictive Analytics | Overview'
+---
 <!-- _class: lead -->
 # Chapter 1 - Introduction to Python & Setup Development 
 ---
@@ -110,21 +111,37 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
   * Content of each found file shall be separated by a newline in output file
   * output file shall be located in [temporary folder](https://python.readthedocs.io/en/latest/library/tempfile.html) of your operating system
 * Task 03
+  * Enhance task 01 by:
+    * ask for a username
+    * appending every run to a CSV file
+    * adding a main function such that you can either view collected data so far or run a new data capturing  
+---
+### Introduction - Tasks
+* Task 04
   * Take data structure from script [07](01-python-introduction/07-using-JSON.py)
   * Goal is a flat list stored to a file
   * Collect all (!) temperatures, WGS coordinates, Timestamp 
   * Timestamp shall be output in a human readable form
   * Output into a CSV file
+* Task 05
+  * create a git repository at Github
+  * check in solutions for tasks 1-3 in seperate folders each
+  * create a Gihub issue that describes changes to solution 3
+    * targeted CSV file shall be taken from a CLI parameter
+    * add a main function to script + [shebang](https://de.wikipedia.org/wiki/Shebang)
+  * create a branch for that task and change solution 3 on this branch
+  * create a pull request for your solution and choose another member from the lecture to review your solution
+  * after review merge code to main branch. 
 ---
-### Introduction - Tasks   
-* Task 04
-  * Build Docker image from [example](03-docker/dockerfile)
-  * Run image
-  * Stop image - why is it taking so long?
-* Task 05 - Bonus Challenge
+### Introduction - Tasks
+* Task 06
   * Get an API token from [Trafikverket](https://data.trafikverket.se/oauth2/Account/register)
   * Get live weather data from [API](https://data.trafikverket.se/documentation/datacache/testbench)
   * Extract data with above solution and write data into file
+* Task 07
+  * Build Docker image from [example](03-docker/dockerfile)
+  * Run image
+  * Stop image - why is it taking so long?
 ---
 ## Install Libraries & virtual environments
 * pip can be used to install libraries, however no more than one version per lib
