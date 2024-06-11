@@ -1,6 +1,6 @@
 services:
-  sampleapp:
-   image: sampleapp:latest
+  # sampleapp:
+  #  image: sampleapp:latest
 
   db:
     image: timescale/timescaledb:latest-pg16
@@ -12,6 +12,16 @@ services:
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=sample
 
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "8888:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: user-name@domain-name.com
+      PGADMIN_DEFAULT_PASSWORD: strong-password
+    volumes:
+      - ./volumes-pgadmin:/var/lib/pgadmin
+
   grafana:
     image: grafana/grafana
     environment:
@@ -19,3 +29,7 @@ services:
       - GF_SECURITY_ADMIN_USER=admin
     ports:
       - 3000:3000
+    volumes:
+       - ./volumes-grafana/lib:/var/lib/grafana
+       - ./volumes-grafana/logs:/var/log/grafana
+       - ./volumes-grafana/provisioning:/etc/grafana/provisioning
