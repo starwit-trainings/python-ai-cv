@@ -4,3 +4,4 @@ torch
 cuda-python
 torchvision 
 torchaudio
+ipykernel
