@@ -5,3 +5,4 @@ cuda-python
 torchvision 
 torchaudio
 ipykernel
+python-ffmpeg

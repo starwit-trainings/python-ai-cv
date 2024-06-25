@@ -1,14 +1,16 @@
-# 1. Export labels from labelstudio using the "YOLO" export format
-# 1a. Run 03a-convert-labelstudio-labels.py to convert label-studio class ids to COCO class ids
-# 2. Separate the image and label files into train and validation sets
-# 2a. Create train.txt/val.txt that contain a list of images, paths are relative from file position
+# 0. Make sure that you have ffmpeg installed on your machine
+# 1. Export project from labelstudio
+# 1a. Export labels from labelstudio using the "JSON" export format
+# 1b. Save the project video
+# 2. Run 03a-convert-labelstudio-export-to-yolo-dataset.py to convert the label studio export (and pass the files from 1a and 1b, see script parameters)
 # 3. Create a dataset.yaml with a similar format as https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/datasets/coco.yaml
 '''e.g.:
 
 path: ./custom
-train: train.txt
-val: val.txt
+train: train
+val: val
 
+# COCO classes
 names:
   0: person
   1: bicycle
