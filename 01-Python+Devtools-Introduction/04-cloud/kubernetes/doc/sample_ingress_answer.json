@@ -1,0 +1,224 @@
+{
+  "apiVersion": "v1",
+  "items": [
+    {
+      "apiVersion": "networking.k8s.io/v1",
+      "kind": "Ingress",
+      "metadata": {
+        "annotations": {
+          "meta.helm.sh/release-name": "minio-tenant",
+          "meta.helm.sh/release-namespace": "sae-backend"
+        },
+        "creationTimestamp": "2024-08-30T15:47:34Z",
+        "generation": 1,
+        "labels": {
+          "app.kubernetes.io/managed-by": "Helm"
+        },
+        "name": "myminio",
+        "namespace": "sae-backend",
+        "resourceVersion": "5711586",
+        "uid": "0e283fcc-1e24-4ce9-b6c4-2cf406965a73"
+      },
+      "spec": {
+        "ingressClassName": "traefik",
+        "rules": [
+          {
+            "host": "api.minio.biggpu",
+            "http": {
+              "paths": [
+                {
+                  "backend": {
+                    "service": {
+                      "name": "minio",
+                      "port": {
+                        "name": "http-minio"
+                      }
+                    }
+                  },
+                  "path": "/",
+                  "pathType": "Prefix"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "status": {
+        "loadBalancer": {
+          "ingress": [
+            {
+              "ip": "192.168.1.133"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "apiVersion": "networking.k8s.io/v1",
+      "kind": "Ingress",
+      "metadata": {
+        "annotations": {
+          "meta.helm.sh/release-name": "minio-tenant",
+          "meta.helm.sh/release-namespace": "sae-backend"
+        },
+        "creationTimestamp": "2024-08-30T15:47:34Z",
+        "generation": 1,
+        "labels": {
+          "app.kubernetes.io/managed-by": "Helm"
+        },
+        "name": "myminio-console",
+        "namespace": "sae-backend",
+        "resourceVersion": "5711587",
+        "uid": "ae679c04-6e72-49ff-89a2-f0bbc9a0f193"
+      },
+      "spec": {
+        "ingressClassName": "traefik",
+        "rules": [
+          {
+            "host": "minio.biggpu",
+            "http": {
+              "paths": [
+                {
+                  "backend": {
+                    "service": {
+                      "name": "myminio-console",
+                      "port": {
+                        "name": "http-console"
+                      }
+                    }
+                  },
+                  "path": "/",
+                  "pathType": "Prefix"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "status": {
+        "loadBalancer": {
+          "ingress": [
+            {
+              "ip": "192.168.1.133"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "apiVersion": "networking.k8s.io/v1",
+      "kind": "Ingress",
+      "metadata": {
+        "annotations": {
+          "meta.helm.sh/release-name": "pgadmin",
+          "meta.helm.sh/release-namespace": "timescale"
+        },
+        "creationTimestamp": "2024-07-31T16:08:57Z",
+        "generation": 1,
+        "labels": {
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "pgadmin4",
+          "app.kubernetes.io/version": "8.9",
+          "helm.sh/chart": "pgadmin4-1.27.0"
+        },
+        "name": "pgadmin-pgadmin4",
+        "namespace": "timescale",
+        "resourceVersion": "5711589",
+        "uid": "b52d6d26-915c-47dc-91d3-c14f1194ef96"
+      },
+      "spec": {
+        "ingressClassName": "traefik",
+        "rules": [
+          {
+            "host": "infra-biggpu",
+            "http": {
+              "paths": [
+                {
+                  "backend": {
+                    "service": {
+                      "name": "pgadmin-pgadmin4",
+                      "port": {
+                        "number": 80
+                      }
+                    }
+                  },
+                  "path": "/pgadmin4",
+                  "pathType": "Prefix"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "status": {
+        "loadBalancer": {
+          "ingress": [
+            {
+              "ip": "192.168.1.133"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "apiVersion": "networking.k8s.io/v1",
+      "kind": "Ingress",
+      "metadata": {
+        "annotations": {
+          "meta.helm.sh/release-name": "grafana",
+          "meta.helm.sh/release-namespace": "grafana"
+        },
+        "creationTimestamp": "2023-10-25T12:52:10Z",
+        "generation": 1,
+        "labels": {
+          "app.kubernetes.io/instance": "grafana",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "grafana",
+          "app.kubernetes.io/version": "10.1.5",
+          "helm.sh/chart": "grafana-6.61.1"
+        },
+        "name": "grafana",
+        "namespace": "grafana",
+        "resourceVersion": "5711590",
+        "uid": "0aec4df9-f1b6-472f-8185-c98ecb87d55c"
+      },
+      "spec": {
+        "ingressClassName": "traefik",
+        "rules": [
+          {
+            "host": "infra-biggpu",
+            "http": {
+              "paths": [
+                {
+                  "backend": {
+                    "service": {
+                      "name": "grafana",
+                      "port": {
+                        "number": 80
+                      }
+                    }
+                  },
+                  "path": "/grafana",
+                  "pathType": "Prefix"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "status": {
+        "loadBalancer": {
+          "ingress": [
+            {
+              "ip": "192.168.1.133"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "kind": "List",
+  "metadata": {
+    "resourceVersion": ""
+  }
+}
