@@ -14,19 +14,17 @@ footer: 'Starwit Technologies GmbH | Predictive Analytics | Overview'
   * Checkout code
   * Install Python
 * Write first program in Python
-* Quick review of Python's most important features
-* Virtual environments and dependency management
-* Advanced features
-* Resources:
-  * https://www.w3schools.com/python/default.asp
+* Introduction to the Python programming language
+* Interesting & useful Python features
 * Docker
 
 ---
 ## Setup your dev environment
 * Instructor works with Ubuntu Linux
-* Tested with Python version 3.11
+* Tested with Python version 3.12
 * To edit code Visual Studio Code is recommended https://code.visualstudio.com/ 
-* If you can't make a Python environment run on your machine - you'll get a VM
+* Resources:
+  * https://www.w3schools.com/python/default.asp
 
 ---
 ## Notes on Installation
