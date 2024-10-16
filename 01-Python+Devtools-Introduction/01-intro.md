@@ -163,11 +163,11 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 ---
 
 ## Advanced Features
-* [Working with files](advanced-features/01-working-with-files.py)
-* [HTTP requests](advanced-features/02-http-requests.py)
+* [Working with files](02-advanced-features/01-working-with-files.py)
+* [HTTP requests](02-advanced-features/02-http-requests.py)
   * pip install requests
-* [Simple GUI](advanced-features/03-simple-gui.py)
-* [On main and parameters](advanced-features/04-on-main.py)
+* [Simple GUI](02-advanced-features/03-simple-gui.py)
+* [On main and parameters](02-advanced-features/04-on-main.py)
 
 ---
 # Introduction to Docker

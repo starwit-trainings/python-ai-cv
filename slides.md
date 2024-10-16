@@ -14,7 +14,7 @@ footer: 'Starwit Technologies GmbH | Predictive Analytics | Overview'
 Each of the next sections can be worked with individually, so no particular order is required. However it is recommandable to follow the intended order.
 
 ---
-## 01 - Development Environment & Language Introduction 
+## Chapter 01 - Setup & Language introduction
 * Setting up your development environment
   * Access Github/SSH
   * Checkout code
@@ -25,19 +25,15 @@ Each of the next sections can be worked with individually, so no particular orde
 * Advanced features
 [Jump to first chapter](01-Python+Devtools-Introduction/01-intro.md)
 ---
-## 02 - Important libraries & tools for Python
+## Chapter 02 - Using libraries with Python
+* Dependency Management
 * Jupyter
-  * how to run
-  * how to version
-  * how to use
-* numpy/pandas
-* https://www.sympy.org/en/index.html
-* various math examples
-  * compute standard distribution & values
-  * matrix operations / slicing
+* Libs to build software
+* Libs to analyze data
+[Jump to second chapter](02-Working-with-libraries/02-libraries.md)
 
 ---
-## 03 - Eating & Analyzing Data
+## Chapter 03 - Eating & Analyzing Data
 * work with CSV/JSON fiels
 * visualize Plotly/Matplotlib/Seaborn
 * openCV
@@ -45,9 +41,10 @@ Each of the next sections can be worked with individually, so no particular orde
   * sample API functions
   * sample Images 
 * Example: Trajectories Carmel
+[Jump to third chapter](03-eating+analyzing-data/data.md)
 
 ---
-## 04 - AI tool chain: training & running models 
+## Chapter 04 - AI tool chain: training & running models 
 * CV example 
   * Yolov8 detection, segmentation, poses
   * train/execute custom model
@@ -61,16 +58,21 @@ Each of the next sections can be worked with individually, so no particular orde
   * run on every computer
   * video source
 * Examples 
-  * Video sample from Carmel
-  * Live footage Aalen?
+[Jump to fourth chapter](04-AI-tools/ai.md)
 ---
-## 05 - Running a computer vision pipeline 
+## Chapter 05 - Running a computer vision pipeline 
 * SAE architecture
   * ProtoBuf
   * Detection
   * Tracking
   * Mapping
 * Custom modules
+[Jump to fifth chapter](05-Computer-Vision-Pipeline/cv-pipeline.md)
+---
+## Chapter 06 - Cloud Technologies
+* Kubernetes
+* AWS Examples
+[Jump to sixth chapter](06-Cloud/06-cloud.md)
 ---
 # License
 
@@ -139,5 +141,4 @@ a:hover {
 ul {
   text-align: left
 }
-
 </style>

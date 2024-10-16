@@ -2,16 +2,14 @@
 marp: true
 paginate: true
 theme: default 
-header: ![h:35](../imgs/starwit.png)
+header: ![h:35](../../imgs/starwit.png)
 footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
 ---
 <!-- _class: lead -->
-# Chapter 2 - Tools & Libraries
+# Chapter 2.2 - Tools & Libraries for Data Analysis
 ---
 ## Overview
-In this chapter various helpful tools and libraries are introduced, that are essential, to make developing with Python easier.
-* Pip with requirements
-* Poetry https://python-poetry.org/
+In this chapter various helpful tools and libraries are introduced, that helps analyzing data.
 * Jupyter
 * numpy
 * matplotlib/plotly/seaborn
@@ -19,60 +17,6 @@ In this chapter various helpful tools and libraries are introduced, that are ess
 * statistics module
 * Pandas
 * OpenStreetMap
----
-## What is dependency management
-* Collecting all libraries automatically
-* Keep control on lib versions
-* Enable automatic builds -> sine qua non releasing!
-* Also for individual projects
-* Makes your code usable for others
-* Version control, documentation & dependency management - never without any of those!
-* Python packages are listed here: https://pypi.org/
----
-
-## Using pip for dependency management
-* pip standard dependency management tool
-* downloads and unpacks libraries
-* Example requests: https://pypi.org/project/requests/
-* Libs can be installed globally, per user or in virtual environments
-* Recursive - dependencies of dependencies
-* But: multiple versions of same library are not possible -> virt envs
-* For this course we will use pip
-
----
-### Pip requirements example
-* Pip can download all packages listed in __requirements.txt__
-* Fix version number/range for libs
-  * numpy==1.26.4 vs requests>=2.31.0 
-* Multiple calls result in same target state
-* Run example
-```bash
-  cd 01-depmanagement-pip
-  python3 -m venv .venv
-  source .venv/bin/activate
-  pip install -r requirements.txt 
-```
-![](../imgs/venv04.jpg)
-
-__Make sure you understand this idea - we will use from now on!__
-
----
-## Using poetry for dependency management
-* same library repository as pip
-* support to build _and_ publish
-* [TOML](https://en.wikipedia.org/wiki/TOML) file for config
-* Much more powerfull than pip
----
-### Poetry example
-* Install Poetry
-  ```bash
-  apt install python3-poetry
-  ```
-* Run example
-  ```bash
-    cd 02-depmanagement-poetry
-    TODO
-  ```
 ---
 # Docker Compose & TimescaleDB
 * [TimescaleDB](https://www.timescale.com/) extension of PostgreSQL database for time series data
