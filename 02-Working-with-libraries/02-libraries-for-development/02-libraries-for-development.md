@@ -39,6 +39,18 @@ In this chapter we will look into a number of libraries, that helps you developi
 * Bonus challenge: after reading all CSV files, write a function, that finds for a given club ID respective league data
 ---
 
+### 02 - Rest services
+
+---
+
+### 03 - Talking to Databases
+In order to talk to PostgreSQL some binaries needs to be installed in Linux. Following example shows how to install on Ubuntu:
+```bash
+    apt install libpq
+```
+
+
+---
 
 <style>
 header {
