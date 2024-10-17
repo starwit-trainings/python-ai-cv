@@ -7,7 +7,7 @@ footer: 'Starwit Technologies GmbH | Predictive Analytics | Overview'
 ---
 
 <!-- _class: lead -->
-# Analytics with Python
+# Introduction to the Python programming language
 ---
 # Chapters
 

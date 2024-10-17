@@ -11,12 +11,34 @@ footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
 ## Overview
 In this chapter we will look into a number of libraries, that helps you developing software system with Python.
 
+* Reading CSV data
 * REST services - Flask
 * Databases - PostgreSQL
+* On Authentication
 * On Logging
 * Protobuf/gRPC Example
 * Network Tools
 * Messaging
+* openAPI
+---
+
+### 01 - Working with CSV files
+
+```bash
+    cd 01-CSV-files
+    python csv-files.py
+```
+
+### Tasks
+* Run program and observice output
+* Look at extract column names function - is this a good idea?
+* Use DictReader reader to create output with column name in front of every field
+* Read data from all other CSV files, check if files exist - display error message, if not. Keep content in global variables
+* Write a new method that adds an entry to every CSV file - check if file exists first, create a new file if not
+* Write a function, that tries to find all CSV files recursively in a folder.
+* Bonus challenge: after reading all CSV files, write a function, that finds for a given club ID respective league data
+---
+
 
 <style>
 header {
