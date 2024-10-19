@@ -24,6 +24,9 @@ In this chapter we will look into a number of libraries, that helps you developi
 
 ### 01 - Working with CSV files
 
+Files with comma seperated values are still very useful and thus, this example shows you, how to use them with Python.
+
+How to run example:
 ```bash
     cd 01-CSV-files
     python csv-files.py
@@ -40,6 +43,19 @@ In this chapter we will look into a number of libraries, that helps you developi
 ---
 
 ### 02 - Rest services
+A wide spread interface technology for application is called [REST](https://en.wikipedia.org/wiki/REST) and it is based on HTTP. This example shows you, how to use FastAPI to implement REST services with Python.
+
+How to run example:
+```bash
+    cd 01-CSV-files
+    python csv-files.py
+```
+
+### Tasks
+* Run program
+* Implement a service for all four models for the football manager
+* Load data from CSV files from last example
+* Implement a service "/fooball/clubs/leauge/{id}" that delivers all clubs playing in provided leauge
 
 ---
 

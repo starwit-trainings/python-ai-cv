@@ -1,0 +1,7 @@
+FROM python:3.11
+
+COPY . /restexample
+RUN apt update && apt upgrade -y && apt install gcc -y
+RUN pip install -r /restexample/requirements.txt
+
+CMD ["python3", "/restexample/main.py"]
