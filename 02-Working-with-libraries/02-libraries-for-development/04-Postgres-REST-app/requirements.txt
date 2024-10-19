@@ -1,0 +1,5 @@
+psycopg2-binary
+psycopg2
+fastapi
+fastapi-code-generator
+uvicorn

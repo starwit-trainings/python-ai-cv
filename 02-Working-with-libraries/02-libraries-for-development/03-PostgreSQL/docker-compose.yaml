@@ -1,0 +1,23 @@
+version: '3.8' 
+
+services:
+  db:
+    image: postgres:latest  # Use the latest official PostgreSQL image
+    container_name: postgres-db  # Name the container
+    environment:
+      POSTGRES_USER: football  # Username for PostgreSQL
+      POSTGRES_PASSWORD: football  # Password for the football user
+      POSTGRES_DB: football  # The name of the default database to be created
+    ports:
+      - "15432:5432"  # Map PostgreSQL port 5432 on the container to port 5432 on the host
+    volumes:
+      - pgdata:/var/lib/postgresql/data  # Persist data in a named volume
+      - ./init-scripts:/docker-entrypoint-initdb.d # init script
+    networks:
+      - db_network  # Specify the network to use (defined below)
+
+volumes:
+  pgdata:  # Named volume for persisting PostgreSQL data
+
+networks:
+  db_network:  # Define a network to allow communication between services

@@ -21,15 +21,24 @@ In this chapter we will look into a number of libraries, that helps you developi
 * Messaging
 * openAPI
 ---
+## Virtual environments
+Most examples need libraries to run.For all examples, in which you find a requirements.txt file, you have to set up a virtual environment. 
+```bash
+  cd folder/with/requirements.tx
+  python3 -m venv .venv
+  source .venv/bin/activate
+  python -m pip install -r requirements.txt
+```
 
-### 01 - Working with CSV files
+---
+## 01 - Working with CSV files
 
 Files with comma seperated values are still very useful and thus, this example shows you, how to use them with Python.
 
 How to run example:
 ```bash
     cd 01-CSV-files
-    python csv-files.py
+    python3 csv-files.py
 ```
 
 ### Tasks
@@ -42,13 +51,13 @@ How to run example:
 * Bonus challenge: after reading all CSV files, write a function, that finds for a given club ID respective league data
 ---
 
-### 02 - Rest services
+## 02 - Rest services
 A wide spread interface technology for application is called [REST](https://en.wikipedia.org/wiki/REST) and it is based on HTTP. This example shows you, how to use FastAPI to implement REST services with Python.
 
 How to run example:
 ```bash
-    cd 01-CSV-files
-    python csv-files.py
+    cd 02-REST-services/restexample
+    python main.py
 ```
 
 ### Tasks
@@ -59,12 +68,44 @@ How to run example:
 
 ---
 
-### 03 - Talking to Databases
+## 03 - Talking to Databases
 In order to talk to PostgreSQL some binaries needs to be installed in Linux. Following example shows how to install on Ubuntu:
 ```bash
     apt install libpq
 ```
+How to run example, first start demo database with docker compose
+```bash
+    cd 03-PostgreSQL
+    docker compose up
+```
+```bash
+    cd 03-PostgreSQL
+    python postgres.py
+```
 
+### Tasks
+* Run program
+* Import data from CSV files and add them to database
+* Write a function that queries for all clubs playing in a league
+
+---
+## 04 - Connecting REST services with a database
+This example is supposed to combine the last two - writing an app, that runs a database and provide its content via a REST interface. Start database like in the last example.
+```bash
+  cd 04-Postgres-REST-app
+  python main.py
+```
+
+### Tasks
+* Run program
+* Implement REST function for all four football objects
+* Implement REST services for
+  * clubs per leauge
+  * players per club
+---
+## 05 - Talking binary gGPRC & Protobuf
+
+---
 
 ---
 

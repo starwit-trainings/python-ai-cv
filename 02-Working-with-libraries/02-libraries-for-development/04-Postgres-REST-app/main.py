@@ -10,19 +10,14 @@ from fastapi.responses import FileResponse
 from models import Club
 from models import Info
 
+import database.postgres as db
+
 app = FastAPI(
     title='Football service',
     version='0.0.1',
     description='This is a sample service, that football data.\n',
     servers=[{'url': 'http://localhost:8080/v0'}],
 )
-
-data = [{"id": 1,
-        "name": "FC Bayern Muenchen",
-         "league": 1},
-        {"id": 2,
-        "name": "VfL Wolfsburg",
-         "league": 1}]
 
 contextPathBase = "/football"
 
@@ -40,19 +35,15 @@ def get_info() -> Info:
 @app.get(contextPathBase + '/clubs', response_model=None)
 def get_info() -> List[Club]:
     result = []
-    for idx,c in enumerate(data):
+    clubs = db.get_all_clubs()
+    for idx,c in enumerate(clubs):
         club = Club()
-        club.id = c["id"]
-        club.name = c["name"]
-        club.league = c["league"]
+        club.id = c[0]
+        club.name = c[1]
+        club.league = c[2]
         result.append(club)
     return result
 
-@app.get(contextPathBase + '/clubs/league/{id}', response_model=None)
-def get_info() -> List[Club]:
-    result = []
-    # TODO
-    return result
-
 if __name__ == '__main__':
+    db.connect()
     uvicorn.run('main:app', host="0.0.0.0", port=8000)
