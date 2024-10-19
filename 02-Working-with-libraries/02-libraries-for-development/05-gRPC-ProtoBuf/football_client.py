@@ -1,0 +1,18 @@
+import logging
+import grpc
+
+import football_manager_pb2
+import football_manager_pb2_grpc
+from google.protobuf import empty_pb2 
+
+def run():
+    with grpc.insecure_channel('127.0.0.1:50051') as channel:
+        stub = football_manager_pb2_grpc.FootballServiceStub(channel)
+        req = empty_pb2.Empty()
+        resp = stub.GetClubs(req)
+        print(resp)
+
+
+if __name__ == '__main__':
+    logging.basicConfig()
+    run()

@@ -105,6 +105,24 @@ This example is supposed to combine the last two - writing an app, that runs a d
 ---
 ## 05 - Talking binary gGPRC & Protobuf
 
+Generate code
+```bash
+  python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. football-manager.proto
+```
+Run server
+```bash
+  python football_server.py
+```
+run client
+```bash
+  python football_client.py
+```
+### Tasks
+* Run server & client
+* Modify Protobuf file and add messages for all four football objects
+* Implement services for list/find by id for all objects
+* Bonus challenge: connect database from db example as a backend
+
 ---
 
 ---

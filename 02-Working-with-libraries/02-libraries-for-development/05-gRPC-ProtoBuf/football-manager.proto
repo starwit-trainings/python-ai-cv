@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package football;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+
+message ClubRequest {
+    int32 id = 1;
+}
+
+message ClubResponse {
+    string name = 1;
+    int32 id = 2;
+    int32 league_id = 3;
+}
+
+message ClubList {
+    repeated ClubResponse clubs = 1;
+}
+
+service FootballService {
+    rpc GetClubs(google.protobuf.Empty) returns (ClubList);
+    rpc GetClub(ClubRequest) returns (ClubResponse);
+}
