@@ -173,17 +173,6 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 * [On main and parameters](02-advanced-features/04-on-main.py)
 
 ---
-# Introduction to Docker
-* How does it work and what is good for?
-* Tasks
-  * Installation Linux/Windows
-  * Run container
-  * Build your own images
-* About Credentials
-* Inspecting Images: [dive](https://github.com/wagoodman/dive)
-* Docker Compose
-
----
 ### Advanced Features - Tasks
 * Task 07 Files
   * Extend solution from Task 01 and store output to a file
@@ -202,9 +191,29 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
   * Get an API token from [Trafikverket](https://data.trafikverket.se/oauth2/Account/register)
   * Get live weather data from [API](https://data.trafikverket.se/documentation/datacache/testbench)
   * Extract data with above solution and write data into file
+
+---
+# Introduction to Docker
+* How does it work and what is good for?
+* Tasks
+  * Installation Linux/Windows
+  * Run container
+  * Build your own images
+* About Credentials
+* Inspecting Images: [dive](https://github.com/wagoodman/dive)
+* Docker Compose
+---
 * Task 10 - Docker
   * Build Docker image from [example](03-docker/dockerfile)
+  ```bash
+  sudo docker build . -t pythonbasic/helloworld
+  ```
+  ![docker image](../imgs/docker-image.jpg)
   * Run image
+  ```bash
+  sudo docker run --rm -it pythonbasic/helloworld
+  ```
+  ![running docker](../imgs/running-docker.jpg)
   * Stop image - why is it taking so long?
 
 <style>
