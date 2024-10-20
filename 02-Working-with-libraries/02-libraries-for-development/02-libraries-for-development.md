@@ -3,7 +3,7 @@ marp: true
 paginate: true
 theme: default 
 header: ![h:35](../../imgs/starwit.png)
-footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
+footer: 'Starwit Technologies GmbH | Python | Overview'
 ---
 <!-- _class: lead -->
 # Chpater 2.1 - Libraries to develop software with Python

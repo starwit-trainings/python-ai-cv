@@ -1,3 +1,4 @@
 import numpy
 
-print("hello world")
+def start():
+    print("hello world")

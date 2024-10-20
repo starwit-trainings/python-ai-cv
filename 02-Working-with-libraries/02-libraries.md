@@ -3,7 +3,7 @@ marp: true
 paginate: true
 theme: default 
 header: ![h:35](../imgs/starwit.png)
-footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
+footer: 'Starwit Technologies GmbH | Python | Overview'
 ---
 # Chapter 02 - Libraries with Python
 ---

@@ -3,7 +3,7 @@ marp: true
 paginate: true
 theme: default 
 header: ![h:35](../../imgs/starwit.png)
-footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
+footer: 'Starwit Technologies GmbH | Python | Overview'
 ---
 <!-- _class: lead -->
 
@@ -41,11 +41,50 @@ footer: 'Starwit Technologies GmbH | IT Foundations | Overview'
   source .venv/bin/activate
   pip install -r requirements.txt 
 ```
-![](../imgs/venv04.jpg)
+![](../../imgs/venv04.jpg)
 
 __Make sure you understand this idea - we will use from now on!__
 
 ---
+## Install Libraries & virtual environments
+* pip can be used to install libraries, however no more than one version per lib
+* Solution: Virtual Environments
+```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+```
+![](../../imgs/venv.jpg)
+```bash
+  pip install numpy
+```
+![](../../imgs/pip01.jpg)
+
+Note: Do not forget to put all installed libs into requirements.txt!
+
+---
+### Virtual envs in detail
+* venv folder should considered as temporary - nothing peristent belongs there!
+* it mostly mirrors central folder structures
+![](../../imgs/venv02.jpg)
+![](../../imgs/venv03.jpg)
+
+---
+### Tips and tricks for virtual envs
+* When developing in Python you will work with many virtual envs - make sure, know which one is currently active
+* This is how virtual envs are deactivated
+  ```bash
+  deactivate
+  ```
+* Conventions can help - don't install libraries manually, always via requirements.txt
+* Package apps in Docker files - there is no use, try to maintain an environment any other way
+* Versioning dependency can be a mess in larger projects - test for incompatible indirect lib versions e.g. numpy
+* List all installed libs in a virtual env with
+  ```bash
+  pip list
+  ```
+  ![pip list](../../imgs/pip-list.jpg)
+---
+
 ## Using poetry for dependency management
 * same library repository as pip
 * support to build _and_ publish
@@ -60,9 +99,9 @@ __Make sure you understand this idea - we will use from now on!__
 * Run example
   ```bash
     cd 02-depmanagement-poetry
-    TODO
+    poetry install
+    poetry run my-script
   ```
-
 
 <style>
 header {

@@ -98,68 +98,71 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 * [Objects & Classes](scripts/09-oop.py) - very brief (abstract classes, interfaces, (multi)inheritance)
 ---
 ### Introduction - Tasks 
-* Task 01
+* Look at every sample script
+* For each of the following tasks, create a separate file
+* Commit your solutions to your local branch
+---
+### Introduction - Tasks 
+* Task 01 - Control structures & Exceptions
   * Write a script that asks for your age, height and weight
   * Make sure, that data is input correctly by checking types
   * Compute [body mass index](https://en.wikipedia.org/wiki/Body_mass_index) and ouput result
   * program shall comment (politely) on results
-* Task 02
-  * Write a script, that finds all files ending with *.py in a folder (as parameter)
-  * Content of all files shall be concatenated into one output file 
-  * Content of each found file shall be separated by a newline in output file
-  * output file shall be located in [temporary folder](https://python.readthedocs.io/en/latest/library/tempfile.html) of your operating system
-* Task 03
-  * Enhance task 01 by:
-    * ask for a username
-    * appending every run to a CSV file
-    * adding a main function such that you can either view collected data so far or run a new data capturing  
+  * Extend your program to ask for user's name and greet user by name. Add also explanation on what program is supposed to do
+  * Extend your program to run in a loop, to catch a multitude of user info
+* Task 02 - Variables
+  * Write a script, that for a given startdate and a number of matchdays (e.g. 34) calculates Friday, Saturday & Sunday for every matchday
+  * Output table with dates
+  * Bonus challenge: make sure to exlude holidays like christmas
+* Task 02a - Variables, Loops and decision
+  * Imagine a number guessing program
+  * Create a random number >0 and < 150
+  * let a user guess a number and give feedback if number is smaller, larger or indeed the correct value of user input
+  * Bonus Challenge: count attempts a user needs and output a high-score list - can we make this persistent?
 ---
 ### Introduction - Tasks
-* Task 04
+* Task 03 - Loops and lists
+  * Write a script, that captures names of ten football clubs
+  * All clubs shall then get assigned a unique id (integer) and a football leauge (e.g. 1)
+  * Output a table of all clubs
+  * Bonus challenge: output list to a file
+* Task 03a - JSON
+  * Enhance last script to output list as JSON
+  * add last modified field to every entry
+* Task 04 - Working with complex data structures
   * Take data structure from script [07](01-python-introduction/07-using-JSON.py)
   * Goal is a flat list stored to a file
   * Collect all (!) temperatures, WGS coordinates, Timestamp 
   * Timestamp shall be output in a human readable form
-  * Output into a CSV file
-* Task 05
+  * Output into a CSV file 
+---
+### Introduction - Tasks
+* Task 05 - Git reminder
   * create a git repository at Github
   * check in solutions for tasks 1-3 in seperate folders each
-  * create a Gihub issue that describes changes to solution 3
+  * create a Gihub issue that describes requirements for solution 3
     * targeted CSV file shall be taken from a CLI parameter
     * add a main function to script + [shebang](https://de.wikipedia.org/wiki/Shebang)
   * create a branch for that task and change solution 3 on this branch
   * create a pull request for your solution and choose another member from the lecture to review your solution
-  * after review merge code to main branch. 
----
-### Introduction - Tasks
-* Task 06
-  * Get an API token from [Trafikverket](https://data.trafikverket.se/oauth2/Account/register)
-  * Get live weather data from [API](https://data.trafikverket.se/documentation/datacache/testbench)
-  * Extract data with above solution and write data into file
-* Task 07
-  * Build Docker image from [example](03-docker/dockerfile)
-  * Run image
-  * Stop image - why is it taking so long?
----
-## Install Libraries & virtual environments
-* pip can be used to install libraries, however no more than one version per lib
-* Solution: Virtual Environments
-```bash
-  python3 -m venv .venv
-  source .venv/bin/activate
-```
-![](../imgs/venv.jpg)
-```bash
-  pip install numpy
-```
-![](../imgs/pip01.jpg)
+  * after review merge code to main branch.
 
 ---
-### Virtual envs in detail
-* venv folder should considered as temporary - nothing peristent belongs there!
-* it mostly mirrors central folder structures
-![](../imgs/venv02.jpg)
-![](../imgs/venv03.jpg)
+### Introduction - Modelling a complex application
+
+![width:600px](../imgs/OOD02.png)
+
+---
+* Task 06 - Data structures / OOD
+  * Let's model the real world application example
+  * Build a class for the following for domain objects
+  * Imagine a football manager, that holds data about clubs, leagues, players and matches
+    * Club: id, name, league_id
+    * League: id, name, first_match, champion, record_player, games_record_player
+    * Player: id, club_id, trikot_number, player_name, country, total_games, goals, assists
+    * Games: id, matchday. match_date, match_time, home_club, guest_club, goals_home, goals_guest
+  * As you can see, every object has an id - move that to an abstract class and let every other class inherit from it.
+  * Create instances for all objects
 ---
 
 ## Advanced Features
@@ -179,6 +182,17 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 * About Credentials
 * Inspecting Images: [dive](https://github.com/wagoodman/dive)
 * Docker Compose
+
+---
+### Advanced Features - Tasks
+* Task 06 
+  * Get an API token from [Trafikverket](https://data.trafikverket.se/oauth2/Account/register)
+  * Get live weather data from [API](https://data.trafikverket.se/documentation/datacache/testbench)
+  * Extract data with above solution and write data into file
+* Task 07
+  * Build Docker image from [example](03-docker/dockerfile)
+  * Run image
+  * Stop image - why is it taking so long?
 
 <style>
 header {
