@@ -24,8 +24,10 @@ class FootballService(football_manager_pb2_grpc.FootballServiceServicer):
         return football_manager_pb2.ClubList(clubs=result)
 
     def GetClub(self, request, context):
-        # Implement the logic to retrieve a specific club
-        pass
+        result = next((club for club in self.data if club["id"] == request.id), None)
+        if result:
+            return football_manager_pb2.ClubResponse(id=result["id"], name=result["name"], league_id=result["league_id"])
+        
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
@@ -33,7 +35,6 @@ def serve():
     server.add_insecure_port('127.0.0.1:50051')
     server.start()
     server.wait_for_termination()
-
 
 if __name__ == '__main__':
     logging.basicConfig()

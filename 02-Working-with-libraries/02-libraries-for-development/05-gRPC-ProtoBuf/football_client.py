@@ -11,6 +11,9 @@ def run():
         req = empty_pb2.Empty()
         resp = stub.GetClubs(req)
         print(resp)
+        req = football_manager_pb2.ClubRequest(id=2)
+        resp = stub.GetClub(req)
+        print(resp)
 
 
 if __name__ == '__main__':
