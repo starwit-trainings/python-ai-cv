@@ -185,11 +185,19 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
 
 ---
 ### Advanced Features - Tasks
-* Task 06 
+* Task 07 Files
+  * Extend solution from Task 01 and store output to a file
+  * Think of a possibility to store data as a CSV file
+* Task 08 - Files and folders
+  * Write a script, that finds all files ending with *.py in a folder (as parameter)
+  * Content of all files shall be concatenated into one output file 
+  * Content of each found file shall be separated by a newline in output file
+  * output file shall be located in [temporary folder](https://python.readthedocs.io/en/latest/library/tempfile.html) of your operating system
+* Task 09 - HTTP requests
   * Get an API token from [Trafikverket](https://data.trafikverket.se/oauth2/Account/register)
   * Get live weather data from [API](https://data.trafikverket.se/documentation/datacache/testbench)
   * Extract data with above solution and write data into file
-* Task 07
+* Task 10 - Docker
   * Build Docker image from [example](03-docker/dockerfile)
   * Run image
   * Stop image - why is it taking so long?
