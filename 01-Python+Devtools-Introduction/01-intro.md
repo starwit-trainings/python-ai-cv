@@ -194,6 +194,11 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
   * Content of each found file shall be separated by a newline in output file
   * output file shall be located in [temporary folder](https://python.readthedocs.io/en/latest/library/tempfile.html) of your operating system
 * Task 09 - HTTP requests
+  * You can use environment variables in Python (see [example](02-advanced-features/02-http-requests.py))
+  * On bash define it like so
+  ```bash
+  export TRAFIKVERKET_API_KEY=
+  ```
   * Get an API token from [Trafikverket](https://data.trafikverket.se/oauth2/Account/register)
   * Get live weather data from [API](https://data.trafikverket.se/documentation/datacache/testbench)
   * Extract data with above solution and write data into file
