@@ -16,8 +16,7 @@ class Info(BaseModel):
     apiVersion: Optional[str] = None
 
 
-class Logo(BaseModel):
+class Club(BaseModel):
     id: Optional[int] = None
     name: Optional[str] = None
-    creator: Optional[str] = Field(None, description='logo creator')
-    imageUri: Optional[str] = None
+    league: Optional[int] = None

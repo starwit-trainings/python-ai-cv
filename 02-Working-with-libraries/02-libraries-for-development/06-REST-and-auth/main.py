@@ -14,14 +14,14 @@ from jwt import PyJWKClient
 import jwt
 from typing import Annotated
 
-from models import Logo
+from models import Club
 from models import Info
 
 app = FastAPI(
-    title='Logo service',
+    title='Football service',
     version='0.0.1',
-    description='This is a sample service, that provides logo images.\n',
-    servers=[{'url': 'http://localhost:8000/logo-service'}],
+    description='This is a sample service, that football data.\n',
+    servers=[{'url': 'http://localhost:8000/football'}],
 )
 
 origins = [
@@ -36,10 +36,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-keycloak_realm = "http://192.168.100.14:8090/realms/microservices"
+keycloak_realm = "http://192.168.1.211:8090/realms/microservices"
 
 keycloak_config = KeycloakConfiguration(
-     url="http://192.168.100.14:8090/",
+     url="http://192.168.1.211:8090/",
      realm="microservices",
      client_id="microservices",
      client_secret="microservices",
@@ -50,19 +50,19 @@ setup_keycloak_middleware(
      keycloak_configuration=keycloak_config,
 )
 
-data = [{"name": "starwit",
-         "creator": "Markus",
-         "imageUri": "resources/starwit.png"},
-        {"name": "starwit-bw",
-         "creator": "Markus",
-         "imageUri": "resources/starwit-bw.png"}]
+data = [{"id": 1,
+        "name": "FC Bayern Muenchen",
+         "league": 1},
+        {"id": 2,
+        "name": "VfL Wolfsburg",
+         "league": 1}]
 
-contextPathBase = "/logo-service"
+contextPathBase = "/football"
 
 # for Docker paths
 baseImagePath = pathlib.Path(__file__).parent.resolve()
 
-@app.get(contextPathBase + '/info', response_model=None)
+@app.get(contextPathBase + '/info', response_model=Info)
 def get_info() -> Info:
     info = Info()
     info.generation_date = datetime.now()
@@ -70,33 +70,22 @@ def get_info() -> Info:
     info.apiVersion = "0.0.1"
     return info
 
-@app.get(contextPathBase + '/logo/all', response_model=List[Logo])
-def get_all_logos() -> List[Logo]:
+@app.get(contextPathBase + '/clubs', response_model=List[Club])
+def get_info() -> List[Club]:
     result = []
-    for idx, d in enumerate(data):
-        l = Logo()
-        l.id = idx
-        l.name = d['name']
-        l.creator = d['creator']
-        l.imageUri = d['imageUri']
-        result.append(l)
+    for idx,c in enumerate(data):
+        club = Club()
+        club.id = c["id"]
+        club.name = c["name"]
+        club.league = c["league"]
+        result.append(club)
     return result
 
-@app.get(contextPathBase + '/logo/{id}', response_model=Logo)
-def get_logo_by_id(id: int) -> Logo:
-    d = data[id]
-    l = Logo()
-    l.id = id
-    l.name = d['name']
-    l.creator = d['creator']
-    l.imageUri = d['imageUri']
-    return l
-
-@app.get(contextPathBase + '/logo/image/{id}', response_model=bytes)
-def get_logo_image(id: int) -> bytes:
-    imagePath = str(baseImagePath) + "/" + data[id]['imageUri']
-    fr = FileResponse(imagePath)
-    return fr
+@app.get(contextPathBase + '/clubs/league/{id}', response_model=List[Club])
+def get_info() -> List[Club]:
+    result = []
+    # TODO
+    return result
 
 @app.get(contextPathBase + "/private")
 def get_private():

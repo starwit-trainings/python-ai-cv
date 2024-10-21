@@ -29,7 +29,7 @@ contextPathBase = "/football"
 # for Docker paths
 baseImagePath = pathlib.Path(__file__).parent.resolve()
 
-@app.get(contextPathBase + '/info', response_model=None)
+@app.get(contextPathBase + '/info', response_model=Info)
 def get_info() -> Info:
     info = Info()
     info.generation_date = datetime.now()

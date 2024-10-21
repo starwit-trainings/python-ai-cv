@@ -1,0 +1,25 @@
+name: service-composition-auth
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:25.0
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      KC_HOSTNAME: http://${HOST_IP}:8090/
+    volumes:
+      - ./microservices-realm.json:/opt/keycloak/data/import/realm.json
+      - ./keycloak-volume:/mnt/volume
+    command: ["start-dev", "--import-realm"]
+    ports:
+      - 8090:8080
+
+  # This is a workaround for the Keycloak image not containing any tools suitable for health checking
+  keycloak-healthchecker:
+    build: ./healthchecker
+    command: ["sleep", "9999999"]
+    init: true
+    healthcheck:
+      test: curl --fail http://keycloak:8080/realms/microservices || exit 1
+      interval: 1s
+      retries: 20
