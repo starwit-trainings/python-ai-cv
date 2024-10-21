@@ -1,6 +1,8 @@
 from concurrent import futures
 import logging
+import time
 import grpc
+from google.protobuf.timestamp_pb2 import Timestamp
 import football_manager_pb2_grpc
 import football_manager_pb2
 
@@ -27,6 +29,11 @@ class FootballService(football_manager_pb2_grpc.FootballServiceServicer):
         result = next((club for club in self.data if club["id"] == request.id), None)
         if result:
             return football_manager_pb2.ClubResponse(id=result["id"], name=result["name"], league_id=result["league_id"])
+        
+    def GeLiveData(self, request, context):
+        for i in range(5):
+            yield football_manager_pb2.LiveTickerResponse(update_time=Timestamp())
+            time.sleep(0.5)
         
 
 def serve():

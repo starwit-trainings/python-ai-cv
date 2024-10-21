@@ -26,7 +26,7 @@ from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__
 from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x16\x66ootball-manager.proto\x12\x08\x66ootball\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1bgoogle/protobuf/empty.proto\"\x19\n\x0b\x43lubRequest\x12\n\n\x02id\x18\x01 \x01(\x05\";\n\x0c\x43lubResponse\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\x05\x12\x11\n\tleague_id\x18\x03 \x01(\x05\"1\n\x08\x43lubList\x12%\n\x05\x63lubs\x18\x01 \x03(\x0b\x32\x16.football.ClubResponse2\x83\x01\n\x0f\x46ootballService\x12\x36\n\x08GetClubs\x12\x16.google.protobuf.Empty\x1a\x12.football.ClubList\x12\x38\n\x07GetClub\x12\x15.football.ClubRequest\x1a\x16.football.ClubResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x16\x66ootball-manager.proto\x12\x08\x66ootball\x1a\x1fgoogle/protobuf/timestamp.proto\x1a\x1bgoogle/protobuf/empty.proto\"\x19\n\x0b\x43lubRequest\x12\n\n\x02id\x18\x01 \x01(\x05\";\n\x0c\x43lubResponse\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\x05\x12\x11\n\tleague_id\x18\x03 \x01(\x05\"(\n\x11LiveTickerRequest\x12\x13\n\x0b\x63lient_name\x18\x01 \x01(\t\"E\n\x12LiveTickerResponse\x12/\n\x0bupdate_time\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\"1\n\x08\x43lubList\x12%\n\x05\x63lubs\x18\x01 \x03(\x0b\x32\x16.football.ClubResponse2\xce\x01\n\x0f\x46ootballService\x12\x36\n\x08GetClubs\x12\x16.google.protobuf.Empty\x1a\x12.football.ClubList\x12\x38\n\x07GetClub\x12\x15.football.ClubRequest\x1a\x16.football.ClubResponse\x12I\n\nGeLiveData\x12\x1b.football.LiveTickerRequest\x1a\x1c.football.LiveTickerResponse0\x01\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -37,8 +37,12 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_CLUBREQUEST']._serialized_end=123
   _globals['_CLUBRESPONSE']._serialized_start=125
   _globals['_CLUBRESPONSE']._serialized_end=184
-  _globals['_CLUBLIST']._serialized_start=186
-  _globals['_CLUBLIST']._serialized_end=235
-  _globals['_FOOTBALLSERVICE']._serialized_start=238
-  _globals['_FOOTBALLSERVICE']._serialized_end=369
+  _globals['_LIVETICKERREQUEST']._serialized_start=186
+  _globals['_LIVETICKERREQUEST']._serialized_end=226
+  _globals['_LIVETICKERRESPONSE']._serialized_start=228
+  _globals['_LIVETICKERRESPONSE']._serialized_end=297
+  _globals['_CLUBLIST']._serialized_start=299
+  _globals['_CLUBLIST']._serialized_end=348
+  _globals['_FOOTBALLSERVICE']._serialized_start=351
+  _globals['_FOOTBALLSERVICE']._serialized_end=557
 # @@protoc_insertion_point(module_scope)

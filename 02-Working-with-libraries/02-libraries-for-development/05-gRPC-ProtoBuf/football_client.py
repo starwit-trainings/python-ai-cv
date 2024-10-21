@@ -15,6 +15,9 @@ def run():
         resp = stub.GetClub(req)
         print(resp)
 
+        for ticker in stub.GeLiveData(req):
+            print(ticker)
+
 
 if __name__ == '__main__':
     logging.basicConfig()
