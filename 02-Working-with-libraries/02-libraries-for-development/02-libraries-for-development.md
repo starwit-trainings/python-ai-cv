@@ -14,9 +14,9 @@ In this chapter we will look into a number of libraries, that helps you developi
 * Reading CSV data
 * REST services - Flask
 * Databases - PostgreSQL
+* Protobuf/gRPC Example
 * On Authentication
 * On Logging
-* Protobuf/gRPC Example
 * Network Tools
 * Messaging
 * openAPI
@@ -103,29 +103,65 @@ This example is supposed to combine the last two - writing an app, that runs a d
   * clubs per leauge
   * players per club
 ---
-## 05 - Talking binary gGPRC & Protobuf
+## 05 - Talking binary gRPC & Protobuf
 
-Generate code
 ```bash
+  #Generate code
   python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. football-manager.proto
 ```
-Run server
 ```bash
+  #Run server
   python football_server.py
 ```
-run client
 ```bash
+  # Run client
   python football_client.py
 ```
 ### Tasks
 * Run server & client
 * Modify Protobuf file and add messages for all four football objects
 * Implement services for list/find by id for all objects
+* Look at streaming example - modify protobuf/python such that home/guest club and goals are transfered
+* build a second live stream, that responds with a list of results
 * Bonus challenge: connect database from db example as a backend
 
 ---
 
+## 06 REST and authorization
+
+```bash
+  # run Keycloak
+  docker compose up
+```
+```bash
+  # start REST app
+  python main.py
+```
+```bash
+  # request token
+  curl -d client_id=microservices \
+    -d username=microservices-admin \ 
+    -d password=microservices-admin \
+    -d grant_type=password http://yourip:8090/realms/microservices/protocol/openid-connect/token
+```
+```bash
+  # request token
+  curl -i -H "Authorization: Bearer TOKEN" localhost:8000/football/clubs
+```
 ---
+## 07 Documenting Python code
+Generating code documentation is an obviously important tool. PDoc does this for Python.
+```bash
+  # start doc server
+  pdoc restexample/main.py
+```
+```bash
+  # start doc server
+  pdoc -o ./html restexample/main.py
+```
+
+### Tasks
+* Add classes from OOP example to this project and generate docs
 
 <style>
 header {

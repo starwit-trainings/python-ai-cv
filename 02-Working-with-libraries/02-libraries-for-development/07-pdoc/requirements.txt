@@ -1,0 +1,4 @@
+fastapi
+fastapi-code-generator
+uvicorn
+pdoc
