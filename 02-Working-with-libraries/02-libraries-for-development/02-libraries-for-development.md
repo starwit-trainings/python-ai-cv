@@ -164,6 +164,24 @@ Generating code documentation is an obviously important tool. PDoc does this for
 * Add classes from OOP example to this project and generate docs
 
 ---
+## 08 Networking tools
+
+How to run
+* Create virtual env & install requirements
+* TCP example
+  ```bash
+  python tcp_examples.py
+  ```
+* DNS example
+  ```bash
+  python dns_examples.py
+  ```
+ 
+Used libs
+* [dnspython](https://www.dnspython.org/) 
+* [scapy](https://scapy.net/)
+
+---
 ## 09 Python & OpenAPI
 
 How to run
