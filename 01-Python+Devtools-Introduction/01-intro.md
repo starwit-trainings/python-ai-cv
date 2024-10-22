@@ -112,8 +112,9 @@ On Windows you have two choices, install Python on Windows, or use WSL2 to run U
   * Extend your program to run in a loop, to catch a multitude of user info
 * Task 02 - Variables
   * Write a script, that for a given startdate and a number of matchdays (e.g. 34) calculates Friday, Saturday & Sunday for every matchday
+  * Note: a match day is a set of Friday, Saturday, Sunday.
   * Output table with dates
-  * Bonus challenge: make sure to exlude holidays like christmas
+  * Bonus challenge: make sure to exclude holidays like christmas
 * Task 02a - Variables, Loops and decision
   * Imagine a number guessing program
   * Create a random number >0 and < 150
