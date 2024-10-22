@@ -1,0 +1,34 @@
+openapi: '3.0.3'
+info:
+  title: Football Manager
+  version: '1.0'
+servers:
+  - url: https://api.server.test/football/v1
+  
+paths:
+  /info:
+    get:
+      description: shall deliver info on interface version and hosting system, readonly
+      operationId: getInfo
+      responses:
+        '200':
+          description: base info 
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Info'
+
+components:
+  schemas:
+    Info:
+      type: object
+      properties:
+        generation-date:
+          type: string
+          format: date-time
+        systemDescription:
+          type: string
+        apiVersion:
+          type: string

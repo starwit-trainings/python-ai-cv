@@ -163,6 +163,26 @@ Generating code documentation is an obviously important tool. PDoc does this for
 ### Tasks
 * Add classes from OOP example to this project and generate docs
 
+---
+## 09 Python & OpenAPI
+
+How to run
+* Create virtual env + install all depdencies
+* Generate code:
+  ```bash
+  fastapi-codegen --input apidoc.yaml --output app
+  ```
+* Start server
+  ```bash
+  cd app
+  python run.py
+  ```
+### Tasks
+* Run example
+* Create components for the four football manager domain objects
+* Create CRUD operations in openAPI definition
+* Generate code
+
 <style>
 header {
   text-align: right;
