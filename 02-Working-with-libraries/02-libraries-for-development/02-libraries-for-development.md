@@ -18,8 +18,9 @@ In this chapter we will look into a number of libraries, that helps you developi
 * On Authentication
 * On Logging
 * Network Tools
-* Messaging
 * openAPI
+* Messaging
+* Working with videos
 ---
 ## Virtual environments
 Most examples need libraries to run.For all examples, in which you find a requirements.txt file, you have to set up a virtual environment. 
@@ -200,6 +201,40 @@ How to run
 * Create components for the four football manager domain objects
 * Create CRUD operations in openAPI definition
 * Generate code
+
+---
+## 10 Messaging
+
+Asynchronous messaging is useful, if no immediate reply is necessary. This example shall introduce you to this concept.
+
+How to run
+* Create virtual env + install all depdencies
+* Run Docker compose script to start [Valkey](https://valkey.io/)
+* Run sender/receiver
+  ```bash
+  python consumer.py
+  ```
+  ```bash
+  python sender.py
+  ```
+### Tasks
+* Send one of the CSV files from earlier examples and send it line by line
+* Receive lines and write results to a new CSV file
+* Write a REST service, that collects football events and sends it to Valkey, write results to file
+* Adapt to save results to database from football manager
+
+---
+## 11 Working with videos
+Handling images and video streams is another very handy capability. This section will introduce you to openCV.
+
+How to run
+* Create virtual env + install all depdencies
+* Run examples
+  ```bash
+  python 01_video_sources.py
+  ```
+
+### Tasks
 
 <style>
 header {
