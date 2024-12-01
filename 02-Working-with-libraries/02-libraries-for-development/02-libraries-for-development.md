@@ -235,6 +235,11 @@ How to run
   ```
 
 ### Tasks
+* Implement reading from video sources for video files and rtsp streams
+* Debug reading from video source and see which datastructure holds a video frame
+* Test all existing video manipulating methods
+* Implement edge detection using [openCV](https://learnopencv.com/edge-detection-using-opencv/)
+* Can we separate detected edges?
 
 <style>
 header {
