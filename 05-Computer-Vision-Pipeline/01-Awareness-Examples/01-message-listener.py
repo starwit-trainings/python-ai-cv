@@ -1,4 +1,9 @@
+import time
+
 import valkey
+
+
+STREAM_NAME = 'geomapper:stream1'
 
 v = valkey.Valkey(host='localhost', port=6379, db=0)
 
@@ -10,14 +15,13 @@ def list_all_keys():
 def receive_sae_data():
     while True:
         try:
-            data = v.xread(count=1, streams={'objecttracker:cam02': '>'}, block=2000)
-            for item in data:
-                proto_data = item[1][0][1][b'proto_data_b64']
-                stream_key = item[0].decode('utf-8')
-                print(proto_data, stream_key)
+            data = v.xread(count=1, streams={STREAM_NAME: '$'}, block=1000)
+            print(f'\n============ NEW QUERY RESULT ==============\n')
+            print(data)
         except Exception as e:
             print("Error:", e)
+            time.sleep(0.2)
             continue
 
-#list_all_keys()
+list_all_keys()
 receive_sae_data()
